@@ -11,7 +11,7 @@ TODOアプリを作ってあり、以下のコマンドで起動する
 uv run python -m todo_api.server.api
 
 # フロントエンドサーバ(React)の起動
-cd todo_frontend && npm start
+cd todo_frontend && pnpm start
 ```
 
 ## 実行してみるプロンプト
