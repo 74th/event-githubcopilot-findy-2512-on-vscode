@@ -17,7 +17,7 @@ class OperationTest(TestCase):
         new_task = Task(
             id=None,
             text="new task",
-            done=False,
+            status="todo",
         )
         created_task = op.create_task(new_task)
 

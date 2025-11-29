@@ -12,12 +12,12 @@ class MemDB:
             {
                 "id": 0,
                 "text": "task1",
-                "done": False,
+                "status": "todo",
             },
             {
                 "id": 1,
                 "text": "task2",
-                "done": False,
+                "status": "todo",
             }
         ]
 
@@ -28,7 +28,7 @@ class MemDB:
         return task["id"]
 
     def search_unfinished(self) -> list[Task]:
-        return [copy(task) for task in self._tasks if not task["done"]]
+        return [copy(task) for task in self._tasks if task["status"] == "todo"]
 
     def update(self, task:Task):
         assert task["id"] is not None

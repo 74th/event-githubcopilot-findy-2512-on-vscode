@@ -1,6 +1,6 @@
-from typing import Optional, TypedDict
+from typing import Literal, Optional, TypedDict
 
 class Task(TypedDict):
     id: Optional[int]
     text: str
-    done: bool
+    status: Literal["todo", "done"]

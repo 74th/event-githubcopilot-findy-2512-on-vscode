@@ -12,7 +12,7 @@ class TestRepository(unittest.TestCase):
         new_id = repo.add(Task(
             id=None,
             text="new task",
-            done=False,
+            status="todo",
         ))
 
         tasks = repo.search_unfinished()

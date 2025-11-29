@@ -10,7 +10,7 @@ class OperationInteractor:
         return self._db.search_unfinished()
 
     def create_task(self, task: Task) -> Task:
-        task["done"] = False
+        task["status"] = "todo"
         self._db.add(task)
         return task
 
@@ -18,7 +18,7 @@ class OperationInteractor:
         task = self._db.get(task_id)
         if task is None:
             raise Exception("not found")
-        task["done"] = True
+        task["status"] = "done"
 
         self._db.update(task)
 
