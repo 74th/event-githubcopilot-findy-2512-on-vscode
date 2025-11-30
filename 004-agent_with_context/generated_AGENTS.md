@@ -25,10 +25,10 @@
 
 ## 開発ワークフロー
 - バックエンド起動: `uv run python -m todo_api.server.api`（ポート 8080。`todo_api/public` を自動 Serve）。
-- フロント dev サーバー: `cd todo_frontend && pnpm start`（または `npm start`）。ポート 3000 で Flask にプロキシします。
+- フロント dev サーバー: `cd todo_frontend && npm run start`。ポート 3000 で Flask にプロキシします。
 - バックエンドテスト: `uv run python -m unittest discover -p "*_test.py" -v`
-- フロントエンドテスト: `cd todo_frontend && pnpm test`（Jest / react-scripts）。
-- 本番ビルド: `cd todo_frontend && pnpm build` 後、`todo_frontend/build/*` を `WEBROOT` 先に配置。
+- フロントエンドテスト: `cd todo_frontend && npm run test`（Jest / react-scripts）。
+- 本番ビルド: `cd todo_frontend && npm run build` 後、`todo_frontend/build/*` を `WEBROOT` 先に配置。
 
 ## 規約と落とし穴
 - HTTP ハンドラは極力薄く保ち、状態遷移やバリデーションは `OperationInteractor` に閉じ込めます。

@@ -11,7 +11,7 @@ TODOアプリを作ってあり、以下のコマンドで起動する
 uv run python -m todo_api.server.api
 
 # フロントエンドサーバ(React)の起動
-cd todo_frontend && pnpm start
+cd todo_frontend && npm start
 ```
 
 ## GitHub MCP Registryからインストール
@@ -25,7 +25,7 @@ cd todo_frontend && pnpm start
 チャット画面のツールから有効化する。
 
 ```
-MCP Toolの  #microsoft/playwright-mcp を使って、http://localhost:3000にアクセスし、以下の手順を行って。
+MCP Toolの  #microsoft/playwright-mcp を使って、http://localhost:3000 にアクセスし、以下の手順を行って。
 なお、サーバは起動済みだよ。
 
 1. Task Title の入力欄に「新しいタスクのテスト」と入力する
