@@ -25,7 +25,7 @@ cd todo_frontend && npm start
 チャット画面のツールから有効化する。
 
 ```
-MCP Toolの  #microsoft/playwright-mcp を使って、http://localhost:3000 にアクセスし、以下の手順を行って。
+#microsoft/playwright-mcp を使って、http://localhost:5173 にアクセスし、以下の手順を行って。
 なお、サーバは起動済みだよ。
 
 1. Task Title の入力欄に「新しいタスクのテスト」と入力する
