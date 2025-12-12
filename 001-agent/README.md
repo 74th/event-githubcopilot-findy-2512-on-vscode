@@ -18,8 +18,8 @@ cd todo_frontend && npm start
 
 APIとフロントエンドで、タスクのカードのデータTaskを、以下のエンティティでやりとりしている。
 
-[todo_api/domain/entity/entity.py](todo_api/domain/entity/entity.py)
-[todo_frontend/src/entity/task.ts](todo_frontend/src/entity/task.ts)
+todo_api/domain/entity/entity.py
+todo_frontend/src/entity/task.ts
 
 ステータスが以下の2種類しかない。
 
@@ -36,7 +36,7 @@ APIとフロントエンドで、タスクのカードのデータTaskを、以�
 
 フロントエンドの、タスクカードの実装は以下にある。
 
-[todo_frontend/src/views/taskList.tsx](todo_frontend/src/views/taskList.tsx)
+todo_frontend/src/views/taskList.tsx
 
 以下の変更をしたい。
 
